@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="imagen/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Impresoras Kyoceras</title>
+</head>
+<body>
+    <header>
+        <h1>Impresoras Kyoceras</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preferencias.html">Preferencias</a></li>
+            <li><a href="audiovisulaes.html">Audiovisuales</a></li>
+            <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-formulario">
+        <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe su nombre aquí" required minlength="4" maxlength="15">
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido" id="apellido" placeholder="Escribe su apellido aquí" required minlength="4" maxlength="15">
+        <label for="mail">Email: </label>
+        <input type="email" id="mail" name="mail" placeholder="Escribe su correo aquí" required>
+        <label for="pais">Pais: </label>
+        <select name="pais" id="pais">
+            <option value="Argentina">Argentina</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+        <label for="comentario">Comentario:</label>
+        <textarea name="comentario" id="comentario" placeholder="Escribe tu comentario" required></textarea>
+
+        <label for="motivo">PQRS: </label>
+        <input type="radio" id="motivo" name="motivo"><i>Peticiones</i>
+        <input type="radio" id="motivo" name="motivo"><i>Quejas</i>
+        <input type="radio" id="motivo" name="motivo"><i>Reclamos</i>
+        <input type="radio" id="motivo" name="motivo"><i>Sugerencias</i>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+
+
+
+
+    <footer class="footer">
+        Derechos reservados &copy; 2023
+    </footer>
+</body>
+</html>
